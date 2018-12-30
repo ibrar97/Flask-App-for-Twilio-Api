@@ -9,11 +9,11 @@ To send a message, first you need to create <a href = "https://www.twilio.com/tr
 #### 2. Your Twilio Number
 #### 3. Your Auth Token
 
-Download this repository<br>
-Open Terminal and Enter `pip install flask` <br>
-After that Enter `pip install twilio`<br>
-Navigate to respostory files directory <br>
-Enter `python app.py` in the terminal <br>
-Copy the address - address look like this `http:127.0.0.1:5000/`
-Enter address in browser<br>
-Enter Twilio Credentials and send mesaages to verified numbers
+- [ ] Download this repository
+- [ ] Open Terminal and Enter `pip install flask` <br>
+- [ ] After that Enter `pip install twilio`<br>
+- [ ] Navigate to respostory files directory <br>
+- [ ] Enter `python app.py` in the terminal <br>
+- [ ] Copy the address - address look like this `http:127.0.0.1:5000/`
+- [ ] Enter address in browser<br>
+- [ ] Enter Twilio Credentials and send mesaages to verified numbers
