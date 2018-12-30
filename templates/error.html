@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Flask App for Twilio API</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="{{ url_for('static',filename='materialize.css')}}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{{ url_for('static',filename='style.css')}}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{{ url_for('static',filename='custom.css')}}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{{ url_for('static',filename='materialize.min.css')}}" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+             
+ 
+</head>
+<body style="height:100%">
+  
+ <div class="container">
+  <div class="container center" >
+    <br><br>    <br><br>
+    <div class="transparent">
+        
+        <div><img  src = "{{ url_for('static',filename='Bitmap.png')}}" class ="logo" ></div>
+        <center><h5 style="color:purple;"><b>Send SMS Through Twillio API</b></h5></center>
+        <br><br>
+    
+      </div>
+    <div> <h5>ERROR : You've Invalid Verifying Account Credentials <br> Check your Twilio Account</h5>
+    <br><br></div>
+    </div>
+    </div>
+ </div>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Flask App for Twilio API</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="{{ url_for('static',filename='materialize.css')}}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{{ url_for('static',filename='style.css')}}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{{ url_for('static',filename='custom.css')}}" type="text/css" rel="stylesheet" media="screen,projection"/>
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+             
+ 
+</head>
+<body>
+  <div class="transparent">
+    
+    <div>
+      
+      <img  src = "{{ url_for('static',filename='Bitmap.png')}}" class ="logo" style="height:150px;width:250px;"></div>
+    <center><h6 class="purple-text"><b>Send SMS Through Twillio API</b></h6></center>
+    <br><br>
+
+  </div>
+ <div class="container">
+    <div class="container">
+        <form class="col s12" action = "http://localhost:5000/main.html" method="POST">
+           
+            <div class="input-field col s6">
+                <i class="material-icons prefix purple-text">contact_phone</i>
+                <input id="icon_prefix" type="number" class="validate">
+                <label class="purple-text" for="icon_prefix" name="Receiver_number">Receiver's Cell Number</label>
+              </div>
+            <div class="row">
+              
+              
+              <div class="input-field col s12">
+                  <i class="material-icons prefix purple-text">chat</i>
+                  <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+                  <label class="purple-text" for="textarea2" name= "msg">Your Message</label>
+                </div>
+                <div align = "right" ><button class="btn waves-effect waves-light purple" type="submit" >Send
+                    <i class="material-icons right">send</i>
+                  </button>
+                </div>
+            </div>
+          </form>
+      </div>
+  </div>
+
+
+
+  
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>

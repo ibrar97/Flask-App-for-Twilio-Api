@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Flask App for Twilio API</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="{{ url_for('static',filename='materialize.css')}}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{{ url_for('static',filename='style.css')}}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{{ url_for('static',filename='custom.css')}}" type="text/css" rel="stylesheet" media="screen,projection"/>
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+             
+ 
+</head>
+<body style="height:100%">
+  <div class="transparent">
+    <br><br>
+    <div><img  src = "{{ url_for('static',filename='Bitmap.png')}}" class ="logo" ></div>
+    <center><h5 style="color:purple;"><b>Send SMS Through Twillio API</b></h5></center>
+    <br><br>
+
+  </div>
+ <div class="container">
+    <div class="">
+        <div class="card-content white-text ">
+            <div class="container">
+          <div class="container">
+            <form class="col s12 container" action="http://localhost:5000/" method= "POST">
+                <div class="row">
+                  <div class="input-field purple-text">
+                    <input name="sid"  type="text" class="validate">
+                    <label class="purple-text" for="sid">Account SID </label>
+                    </div>
+                    <div>
+
+                      <div class="input-field">
+                          <input id="twilio_number" type="number" class="validate" name="t_number">
+                          <label  class="purple-text" for="twilio_number">Your Twilio Number</label>
+                        </div>
+
+                        <div class="input-field">
+                            <input id="password" type="password" class="validate" name="auth_token">
+                            <label class="purple-text"  for="password">Authentification Token</label>
+                          </div>
+                          <p align = "right"> 
+                              <button class="btn waves-effect waves-light purple" type="submit">Submit </button>
+                              </p
+                              <br><br><br><br><br>
+
+                  </div> <!-- ROW-->
+                  
+    
+                
+                  </div>
+                </div>
+                
+              </form>
+              </div>
+              
+         
+        </div>
+        
+      </div>
+
+
+
+
+      
+ </div>
+
+
+
+  <div class= "page-footer purple">
+    <div class="footer-copyright">
+      <div class="container">
+        <p><center>Developed by Ibrar Ahmad <br> Github : <a style="color: yellow;" href="https://github.com/ibrar97">https://github.com/ibrar97</a></center></p>
+      </div>
+    </div>
+  </div>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>

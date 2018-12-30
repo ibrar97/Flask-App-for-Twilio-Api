@@ -1,0 +1,21 @@
+body{
+    height: 100%;
+}
+img.logo{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+p{
+    margin-right: auto;
+    margin-left: auto;
+}
+h6{
+    margin-top: 0%;
+    color: blueviolet;
+    margin-bottom: 50px;
+}
+
+
+
